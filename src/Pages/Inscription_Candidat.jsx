@@ -1,8 +1,12 @@
 import React from 'react'
+import Navbar from '../Components/Navbar'
 
 function Inscription_Candidat() {
   return (
-    <div>Inscription_Candidat</div>
+    <div>
+        <Navbar />
+        <h1>inscription d'un candidat</h1>
+    </div>
   )
 }
 

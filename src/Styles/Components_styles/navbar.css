@@ -205,4 +205,12 @@ a {
     font-size: 1.05rem;
   }
 }                                         
-            
+.dropdown-toggler {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 16px;
+  font: inherit;
+  color: inherit;
+  margin-top: 8px;
+}

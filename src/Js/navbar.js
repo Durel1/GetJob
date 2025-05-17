@@ -6,7 +6,7 @@ let dropdownIsOpen = false
 
 // Vérifie s'il y a des menus déroulants
 if (dropdowns.length) {
-  
+
   // Ajoute un écouteur de clic sur chaque bouton de menu déroulant
   dropdowns.forEach((dropdown) => {
     dropdown.addEventListener('click', (event) => {
@@ -29,7 +29,7 @@ if (dropdowns.length) {
 }
 
 
-// Ferme le menu déroulant si on clique en dehors
+// Fermer le menu déroulant si on clique en dehors
 window.addEventListener('mouseup', (event) => {
   if (dropdownIsOpen) {
     dropdowns.forEach((dropdownButton) => {

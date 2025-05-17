@@ -1,43 +1,79 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import '../Styles/Components_styles/navbar.css'
-import '../Js/navbar.js'
 
 function Navbar() {
+  // État pour gérer l'ouverture du menu déroulant "S'incrire"
+  const [dropdownOpen, setDropdownOpen] = useState(false)
+  // État pour gérer l'ouverture du menu sur mobile
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  // Ferme le menu déroulant si on clique en dehors
+  React.useEffect(() => {
+    function handleClickOutside(event) {
+      if (!event.target.closest('.navbar-dropdown')) {
+        setDropdownOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
+
   return (
     <nav className="navbar">
-        <div className="container">
-            <div className="navbar-header">
-                <button className="navbar-toggler" data-toggle="open-navbar1">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <NavLink to="/">
-                    <h4>Notre<span>Logo</span></h4>
-                </NavLink>
-            </div>
-
-            <div className="navbar-menu" id="open-navbar1">
-                <ul className="navbar-nav">
-                    <li className="active"><NavLink to="/"> Accueil</NavLink></li>
-                    <li><NavLink to="/Connection" >Se Connecter</NavLink></li>
-
-                    <li className="navbar-dropdown">
-                        <NavLink to="#" className="dropdown-toggler" data-dropdown="my-dropdown-id">
-                            S'incrire <i className="fa fa-angle-down"></i>
-                        </NavLink>
-                        <ul className="dropdown" id="my-dropdown-id">
-                            <li><NavLink to="/Inscription-Candidat">Candidat</NavLink></li>
-                            <li className="separator"></li>
-                            <li><NavLink to="/Inscription-Recruteur">Recruteur</NavLink></li>
-                        </ul>
-                    </li>
-
-                </ul>
-            </div>
+      <div className="container">
+        <div className="navbar-header">
+          {/* Bouton pour ouvrir/fermer le menu sur mobile */}
+          <button
+            className="navbar-toggler"
+            data-toggle="open-navbar1"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          {/* Logo de la navbar */}
+          <NavLink to="/">
+            <h4>Notre<span>Logo</span></h4>
+          </NavLink>
         </div>
-        <script src="../Js/navbar.js"></script>
+
+        {/* Menu principal de la navbar */}
+        <div className={`navbar-menu${menuOpen ? ' active' : ''}`} id="open-navbar1">
+          <ul className="navbar-nav">
+            {/* Lien Accueil */}
+            <li className="active">
+              <NavLink to="/">Accueil</NavLink>
+            </li>
+            {/* Lien Se Connecter */}
+            <li>
+              <NavLink to="/Connection">Se Connecter</NavLink>
+            </li>
+            
+            {/* Menu déroulant S'incrire */}
+            <li className="navbar-dropdown">
+              <button
+                className="dropdown-toggler"
+                type="button"
+                onClick={() => setDropdownOpen(!dropdownOpen)}
+              >
+                S'incrire <i className="fa fa-angle-down"></i>
+              </button>
+              {/* Sous-menu déroulant */}
+              <ul className={`dropdown${dropdownOpen ? ' show' : ''}`} id="my-dropdown-id">
+                <li>
+                  <NavLink to="/Inscription_Candidat">Candidat</NavLink>
+                </li>
+                <li className="separator"></li>
+                <li>
+                  <NavLink to="/Inscription_Recruteur">Recruteur</NavLink>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   )
 }
