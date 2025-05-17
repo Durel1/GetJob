@@ -142,6 +142,11 @@ a {
 .navbar .navbar-menu .navbar-nav > li > a:hover {
   color: #66f;
 }
+
+button:hover{
+  color:#66f ;
+}
+
 @media (max-width: 768px) {
   .navbar .navbar-menu .navbar-nav > li > a {
     border-bottom: 1px solid #eceef3;
@@ -150,6 +155,15 @@ a {
 .navbar .navbar-menu .navbar-nav > li.active a {
   color: #66f;
 }
+
+/* Ajoute ceci ou adapte la règle existante */
+.navbar .navbar-menu .navbar-nav > li > a.active,
+.navbar .navbar-menu .navbar-nav .dropdown a.active {
+  color: #66f;
+  font-weight: bold;
+  /* Ajoute d'autres styles si tu veux */
+}
+
 .navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown {
   list-style: none;
   position: absolute;

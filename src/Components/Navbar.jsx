@@ -20,8 +20,10 @@ function Navbar() {
   }, [])
 
   return (
+
     <nav className="navbar">
       <div className="container">
+
         <div className="navbar-header">
           {/* Bouton pour ouvrir/fermer le menu sur mobile */}
           <button
@@ -33,7 +35,7 @@ function Navbar() {
             <span></span>
             <span></span>
           </button>
-          {/* Logo de la navbar */}
+
           <NavLink to="/">
             <h4>Notre<span>Logo</span></h4>
           </NavLink>
@@ -42,13 +44,12 @@ function Navbar() {
         {/* Menu principal de la navbar */}
         <div className={`navbar-menu${menuOpen ? ' active' : ''}`} id="open-navbar1">
           <ul className="navbar-nav">
-            {/* Lien Accueil */}
-            <li className="active">
-              <NavLink to="/">Accueil</NavLink>
-            </li>
-            {/* Lien Se Connecter */}
+
             <li>
-              <NavLink to="/Connection">Se Connecter</NavLink>
+              <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")} end >Accueil</NavLink>
+            </li>
+            <li>
+              <NavLink to="/Connection" className={({ isActive }) => (isActive ? "active" : "")}>Se Connecter</NavLink>
             </li>
             
             {/* Menu déroulant S'incrire */}
@@ -63,14 +64,15 @@ function Navbar() {
               {/* Sous-menu déroulant */}
               <ul className={`dropdown${dropdownOpen ? ' show' : ''}`} id="my-dropdown-id">
                 <li>
-                  <NavLink to="/Inscription_Candidat">Candidat</NavLink>
+                  <NavLink to="/Inscription_Candidat" className={({ isActive }) => (isActive ? "active" : "")}>Candidat</NavLink>
                 </li>
                 <li className="separator"></li>
                 <li>
-                  <NavLink to="/Inscription_Recruteur">Recruteur</NavLink>
+                  <NavLink to="/Inscription_Recruteur" className={({ isActive }) => (isActive ? "active" : "")}>Recruteur</NavLink>
                 </li>
               </ul>
             </li>
+
           </ul>
         </div>
       </div>

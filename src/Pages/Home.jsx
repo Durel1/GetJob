@@ -5,8 +5,7 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <h1>Home</h1>
-      <p>Welcome to the home page!</p>
+      <h1>Welcome to GetJob</h1>
     </div>
   )
 }
