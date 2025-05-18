@@ -37,7 +37,7 @@ function Navbar() {
           </button>
 
           <NavLink to="/">
-            <h4>Notre<span>Logo</span></h4>
+            <img  className="logo" src="./logo.png" alt="" />
           </NavLink>
         </div>
 
