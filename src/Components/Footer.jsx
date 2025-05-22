@@ -16,7 +16,7 @@ const Footer = () => {
                 <a href="/" className="p-0">
                   <h4 className="text-white"><i className="fas fa-search-dollar me-3"></i>GetJob</h4>
                 </a>
-                <p className="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+                <p className="mb-4">Lorem ipsum dolor sit amet, </p>
                 <div className="d-flex">
                 </div>
               </div>
@@ -58,9 +58,6 @@ const Footer = () => {
                   <a className="btn btn-primary btn-sm-square rounded-circle me-3" href="#">
                     <FaTwitter className="text-white" />
                   </a>
-                  <a className="btn btn-primary btn-sm-square rounded-circle me-3" href="#">
-                    <FaInstagram className="text-white" />
-                  </a>
                   <a className="btn btn-primary btn-sm-square rounded-circle me-0" href="https://www.linkedin.com/in/durel-kenfack-017b952a1/">
                     <FaLinkedinIn className="text-white" />
                   </a>
@@ -74,13 +71,9 @@ const Footer = () => {
       
       {/* Copyright Start */}
       <div className="copyrigth">
-        <div className=" text-center ">
-              <span className="text-body">
-                <NavLink to="/" className="border-bottom text-white" >
-                  <FaCopyright className="text-light me-2" />GetJob
-                </NavLink>, All right reserved.
-              </span>
-        </div>
+        <span className="text-body">
+            <NavLink to="/" className="border-bottom text-white" ><FaCopyright />GetJob</NavLink>, All right reserved.
+        </span>
       </div>
       {/* Copyright End */}
 

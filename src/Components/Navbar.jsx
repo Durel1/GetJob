@@ -37,7 +37,7 @@ function Navbar() {
           </button>
 
           <NavLink to="/">
-            <img  className="logo" src="./logo.png" alt="" />
+            <img  className="logo" src="" alt="LOGO" />
           </NavLink>
         </div>
 
@@ -54,7 +54,7 @@ function Navbar() {
             
             {/* Menu déroulant S'incrire */}
             <li className="navbar-dropdown">
-              <button
+              <button style={{color: '#3c4250',}}
                 className="dropdown-toggler"
                 type="button"
                 onClick={() => setDropdownOpen(!dropdownOpen)}

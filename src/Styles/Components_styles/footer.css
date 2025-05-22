@@ -505,7 +505,6 @@ img {
 }
 
 .copyrigth{
-    justify-content: center;
     text-align: center;
     background-color: var(--bs-dark);
     padding-right: var(--bs-gutter-x, 0.75rem);
