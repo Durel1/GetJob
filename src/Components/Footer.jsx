@@ -51,7 +51,7 @@ const Footer = () => {
                   <FaPhoneAlt className="text-primary me-3" />
                   <p className="text-white mb-0">(+237) 690 48 49 04</p>
                 </div>
-                <div className="d-flex">
+                <div className="d-flex" style={{ marginLeft: '13px' }}>
                   <a className="btn btn-primary btn-sm-square rounded-circle me-3" href="#">
                     <FaFacebookF className="text-white" />
                   </a>
