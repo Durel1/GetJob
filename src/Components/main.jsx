@@ -16,7 +16,7 @@ const Main = () => {
 
       <div className="search-box">
         <h2 className="search-title">
-          Trouvez votre futur job parmi <span className="highlight">2050</span> postes ouverts
+          Trouvez votre futur job parmi <span className="highlight">2060</span> postes ouverts
         </h2>
         <div className="search-inputs">
           <input
