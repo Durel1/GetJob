@@ -1,12 +1,13 @@
 import React from 'react'
-import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
+import Navbar from '../Components/Navbar'
 
 function Inscription_Recruteur() {
   return (
     <div>
       <Navbar />
-      <h1>inscription Recruteur</h1>
+
+
       <Footer />
     </div>
   )

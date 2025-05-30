@@ -1,15 +1,15 @@
 import React from 'react'
-import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import Main from '../Components/main'
+import RecruitingCompanies from '../Components/RecruitingCompanies'
+import JobSearch from '../Components/JobSearch'
+import Navbar from '../Components/Navbar'
 
 function Home() {
   return (
     <div>
       <Navbar />
-
-      <Main />
-
+      <JobSearch />
+      <RecruitingCompanies />
       <Footer />
     </div>
   )

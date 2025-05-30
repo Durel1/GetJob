@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import '../Styles/Components_styles/navbar.css'
+import '../Styles/Components_styles/Navbar.css'
+
 
 function Navbar() {
   // État pour gérer l'ouverture du menu déroulant "S'incrire"

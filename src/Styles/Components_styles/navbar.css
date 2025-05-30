@@ -9,11 +9,7 @@ body {
 
   font-family: "Roboto", sans-serif;
   font-size: 0.925rem;
-  
-}
-
-a {
-  text-decoration: none;
+  padding-top: 70px;
 }
 
 .container {
@@ -31,6 +27,7 @@ a {
   align-items: center;
   justify-content: space-between;
   font-weight: bold;
+  
 }
 @media (max-width: 768px) {
   .navbar,
@@ -44,6 +41,11 @@ a {
   background-color: rgba(86, 199, 237, 0.963);
   padding: 1rem 1.15rem;
   border-bottom: 1px solid #eceef3;
+  position: fixed;      /* Ajouté */
+  top: 0;               /* Ajouté */
+  left: 0;              /* Ajouté */
+  width: 100%;          /* Ajouté */
+  z-index: 1000; 
 }
 @media (min-width: 576px) {
   .navbar .container {
