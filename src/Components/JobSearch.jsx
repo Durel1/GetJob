@@ -1,7 +1,7 @@
 import React from "react";
-import "../Styles/Components_styles/main.css"; 
+import "../Styles/Components_styles/JobSearch.css"; 
 
-const Main = () => {
+const JobSearch = () => {
   return (
     <div className="job-search-container">
       <div className="top-buttons">
@@ -38,8 +38,7 @@ const Main = () => {
         </div>
       </div>
     </div>
-    
   );
 };
 
-export default Main;
+export default JobSearch;
