@@ -35,11 +35,14 @@
   border: none;
   cursor: pointer;
   white-space: nowrap;
-  margin-bottom: 60px;
+
+}
+
+.search-button .icon {
+  color: #004a7f; /* ou une autre couleur visible */
 }
 
 .search-box {
-  
   position: absolute;
   bottom: 40px;
   left: 50%;
@@ -108,7 +111,7 @@
   }
 
   .top-buttons {
-    flex-direction: row;
+    
     align-items: center;
   }
 
@@ -119,7 +122,10 @@
   }
 
   .search-box {
-    padding: 30px 15px;
+    
+    padding: 10px 15px;
+    bottom: 20px;
+
   }
 }
 
@@ -141,5 +147,16 @@
   .icon {
     width: 20px;
     height: 20px;
+  }
+}
+
+@media (min-width: 605px) {
+  .job-search-container{
+    display: flex;
+    flex-direction: row;
+  }
+  .search-box{
+    display: flex;
+    flex-direction: column;
   }
 }

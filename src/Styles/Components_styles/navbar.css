@@ -13,10 +13,11 @@ body {
 }
 
 .container {
-  width: 1170px;
+  width: 100%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 .navbar,
@@ -38,7 +39,7 @@ body {
 
 .navbar {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  background-color: rgba(86, 199, 237, 0.963);
+  background-color: #004a7f;
   padding: 1rem 1.15rem;
   border-bottom: 1px solid #eceef3;
   position: fixed;      /* Ajouté */
@@ -103,7 +104,7 @@ body {
 }
 .navbar .navbar-header > a {
   font-weight: 500;
-  color: #3c4250;
+  color: white;
 }
 .navbar .navbar-menu {
   display: flex;
@@ -137,7 +138,7 @@ body {
   }
 }
 .navbar .navbar-menu .navbar-nav > li > a {
-  color: #3c4250;
+  color: white;
   text-decoration: none;
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -199,13 +200,13 @@ button:hover{
   }
 }
 .navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown li a {
-  color: #3c4250;
+  color: white;
   padding: 0.25rem 1rem;
   display: block;
 }
 .navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown.show {
   display: block !important;
-  background-color: rgba(86, 199, 237, 0.963);
+  background-color: #004a7f;
 }
 .navbar .navbar-menu .navbar-nav .dropdown > .separator {
   height: 1px;
@@ -216,6 +217,9 @@ button:hover{
 }
 .navbar .navbar-dropdown {
   position: relative;
+}
+.navbar-dropdown:hover{
+  color:#66f ;
 }
 
 .navbar .navbar-header > a span {

@@ -6,9 +6,9 @@ import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <>
+    <div>
       {/* Footer Start */}
-      <div className="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+      <div className="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s" >
         <div className="container py-5 border-start-0 border-end-0" style={{ border: '1px solid', borderColor: 'rgba(255, 255, 255, 0.08)' }}>
           <div className="row g-5">
             <div className="col-md-6 col-lg-6 col-xl-4">
@@ -77,7 +77,7 @@ const Footer = () => {
       </div>
       {/* Copyright End */}
 
-    </>
+    </div>
   );
 };
 
