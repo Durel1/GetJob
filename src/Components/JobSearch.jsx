@@ -4,6 +4,7 @@ import "../Styles/Components_styles/JobSearch.css";
 const JobSearch = () => {
   return (
     <div className="job-search-container">
+      
       <div className="top-buttons">
         <button className="candidate-button">
           Candidat : Déposez votre CV
@@ -37,6 +38,7 @@ const JobSearch = () => {
           </button>
         </div>
       </div>
+
     </div>
   );
 };

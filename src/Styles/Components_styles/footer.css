@@ -38,7 +38,7 @@
 
 /*** copyright Start ***/
 .copyright {
-    background: var(--bs-dark);
+    background:#004a7f;
 }
 /*** copyright end ***/
 
@@ -78,6 +78,10 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
+    color: white;
+}
+*, *::before, *::after :hover{
+    color:#66f ;
 }
 
 @media (prefers-reduced-motion: no-preference) {

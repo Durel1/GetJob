@@ -55,7 +55,7 @@ function Navbar() {
             
             {/* Menu déroulant S'incrire */}
             <li className="navbar-dropdown">
-              <button style={{color: '#3c4250',}}
+              <button
                 className="dropdown-toggler"
                 type="button"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
