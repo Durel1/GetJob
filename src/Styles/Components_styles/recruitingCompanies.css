@@ -34,7 +34,7 @@
 
 .featured-company {
   display: inline-block;
-  background-color: #c3002f;
+  background-color: #004a7f ;
   color: white;
   border-radius: 30px;
   padding: 1rem;
@@ -51,7 +51,7 @@
 
 .featured-logo {
   background-color: white;
-  color: #c3002f;
+  color: #333;
   border-radius: 20px;
   padding: 2rem;
   font-weight: bold;

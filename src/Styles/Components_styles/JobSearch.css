@@ -8,6 +8,14 @@
   box-sizing: border-box;
   background: url(../../../public/wallpaper.jpg) center/cover;
 }
+.NavLink {
+  text-decoration: none;
+  color: white;
+}
+.NavLink:hover {
+  text-decoration: underline;
+  color:#66f;
+}
 
 .top-buttons {
   position: absolute;
@@ -84,6 +92,9 @@
   box-sizing: border-box;
   color: #333;
 }
+ option{
+  color:#333
+ }
 
 .search-button {
   background-color: white;
