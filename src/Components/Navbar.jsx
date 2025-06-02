@@ -47,7 +47,7 @@ function Navbar() {
           <ul className="navbar-nav">
 
             <li>
-              <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")} end >Accueil</NavLink>
+              <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")} end >Home</NavLink>
             </li>
             <li>
               <NavLink to="/Connection" className={({ isActive }) => (isActive ? "active" : "")}>Se Connecter</NavLink>
