@@ -8,8 +8,6 @@ function Connection() {
     <div>
 
       <Navbar />
-      
-      
       <Footer />
     </div>
   )
