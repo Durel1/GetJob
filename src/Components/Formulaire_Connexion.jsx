@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const FormulaireConnection = () => {
+const Formulaire_Connexion = () => {
   const [email, setEmail] = useState("");
   const [motDePasse, setMotDePasse] = useState("");
 
@@ -64,4 +64,4 @@ const styles = {
   }
 };
 
-export default FormulaireConnection;
+export default Formulaire_Connexion;
