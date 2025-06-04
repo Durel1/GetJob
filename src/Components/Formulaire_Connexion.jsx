@@ -11,7 +11,7 @@ const Formulaire_Connexion = () => {
 
   return (
     <div style={styles.container}>
-      <h2>Formulaire de connexion</h2>
+      <h2 style={{color :'#333',fontSize: '24px'}}>Formulaire de connexion</h2>
       <form onSubmit={handleSubmit} style={styles.form}>
         <input
           type="email"
@@ -37,29 +37,40 @@ const Formulaire_Connexion = () => {
 
 const styles = {
   container: {
+    border: "1px solid #ccc",
     maxWidth: "400px",
     margin: "50px auto",
     padding: "20px",
-    border: "1px solid #ccc",
+    backgroundColor: "#f9f9f9",
+    boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
     borderRadius: "8px",
     textAlign: "center",
     fontFamily: "Arial"
   },
   form: {
+
     display: "flex",
     flexDirection: "column",
     gap: "12px"
   },
   input: {
+    margin: "10px 0",
+    backgroundColor: "#fff",
+    color: "black",
+    border: "1px solid #ccc",
+    borderRadius: "4px",
+    width: "100%",
     padding: "10px",
     fontSize: "16px"
   },
   button: {
     padding: "10px",
     fontSize: "16px",
-    backgroundColor: "#1976d2",
+    backgroundColor: "#004a7f",
     color: "#fff",
     border: "none",
+    borderRadius: "4px",
+    fontWeight: "bold",
     cursor: "pointer"
   }
 };
