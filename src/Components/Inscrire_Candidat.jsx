@@ -30,7 +30,7 @@ function Inscrire_candidat() {
           <h2 style={styles.title}>Inscription Candidat</h2>
           <form onSubmit={handleSubmit}>
             <div style={styles.formGroup}>
-              <label>Nom complet :</label>
+              <label style={{color: '#333'}}>Nom complet :</label>
               <input
                 type="text"
                 name="nom"
@@ -41,7 +41,7 @@ function Inscrire_candidat() {
               />
             </div>
             <div style={styles.formGroup}>
-              <label>Email :</label>
+              <label style={{color: '#333'}}>Email :</label>
               <input
                 type="email"
                 name="email"
@@ -52,7 +52,7 @@ function Inscrire_candidat() {
               />
             </div>
             <div style={styles.formGroup}>
-              <label>Mot de passe :</label>
+              <label style={{color: '#333'}}>Mot de passe :</label>
               <input
                 type="password"
                 name="password"
@@ -91,10 +91,14 @@ const styles = {
     maxWidth: '450px',
   },
   title: {
+    color: '#333',
+    fontSize: '24px',
     textAlign: 'center',
     marginBottom: '20px',
   },
   formGroup: {
+    color: '#333',
+    marginTop: '10px',
     marginBottom: '15px',
     display: 'flex',
     flexDirection: 'column',
@@ -108,7 +112,7 @@ const styles = {
   button: {
     width: '100%',
     padding: '10px',
-    backgroundColor: '#28a745',
+    backgroundColor: "#004a7f",
     color: '#fff',
     fontWeight: 'bold',
     border: 'none',
