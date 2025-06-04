@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaAppleAlt, FaPlay, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaFirefoxBrowser, FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaAngleRight, FaArrowUp, FaCopyright } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt,FaFacebookF, FaTwitter,FaLinkedinIn, FaAngleRight,FaCopyright } from 'react-icons/fa';
 import '../Styles/Components_styles/footer.css';
 import { NavLink } from 'react-router-dom';
 

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Navbar from '../Components/Navbar';
-import Footer from '../Components/Footer';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
-function Inscription_Candidat() {
+function Formulaire_Inscription_Candidat() {
   const [form, setForm] = useState({
     nom: '',
     email: '',
@@ -117,4 +117,4 @@ const styles = {
   },
 };
 
-export default Inscription_Candidat;
+export default Formulaire_Inscription_Candidat;
