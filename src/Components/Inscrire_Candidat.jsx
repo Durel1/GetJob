@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-function Formulaire_Inscription_Candidat() {
+function Inscrire_candidat() {
   const [form, setForm] = useState({
     nom: '',
     email: '',
@@ -30,7 +30,7 @@ function Formulaire_Inscription_Candidat() {
           <h2 style={styles.title}>Inscription Candidat</h2>
           <form onSubmit={handleSubmit}>
             <div style={styles.formGroup}>
-              <label style={{color: '#333'}}>Nom complet :</label>
+              <label>Nom complet :</label>
               <input
                 type="text"
                 name="nom"
@@ -41,7 +41,7 @@ function Formulaire_Inscription_Candidat() {
               />
             </div>
             <div style={styles.formGroup}>
-              <label style={{color: '#333'}}>Email :</label>
+              <label>Email :</label>
               <input
                 type="email"
                 name="email"
@@ -52,7 +52,7 @@ function Formulaire_Inscription_Candidat() {
               />
             </div>
             <div style={styles.formGroup}>
-              <label style={{color: '#333'}}>Mot de passe :</label>
+              <label>Mot de passe :</label>
               <input
                 type="password"
                 name="password"
@@ -91,14 +91,10 @@ const styles = {
     maxWidth: '450px',
   },
   title: {
-    color: '#333',
-    fontSize: '24px',
     textAlign: 'center',
     marginBottom: '20px',
   },
   formGroup: {
-    color: '#333',
-    marginTop: '10px',
     marginBottom: '15px',
     display: 'flex',
     flexDirection: 'column',
@@ -112,7 +108,7 @@ const styles = {
   button: {
     width: '100%',
     padding: '10px',
-    backgroundColor: "#004a7f",
+    backgroundColor: '#28a745',
     color: '#fff',
     fontWeight: 'bold',
     border: 'none',
@@ -121,4 +117,4 @@ const styles = {
   },
 };
 
-export default Formulaire_Inscription_Candidat;
+export default Inscrire_candidat;

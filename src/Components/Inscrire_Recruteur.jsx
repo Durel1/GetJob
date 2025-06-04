@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-function Formulaire_Inscription_Recruteur() {
+function Inscrire_recruteur() {
   const [form, setForm] = useState({
     entreprise: '',
     nom: '',
@@ -130,4 +130,4 @@ const styles = {
   },
 };
 
-export default Formulaire_Inscription_Recruteur;
+export default Inscrire_recruteur;

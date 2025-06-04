@@ -1,16 +1,14 @@
 import React from 'react'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
-import Formulaire_Inscription_Candidat from '../Components/Formulaire_inscription_candidat'
+import Inscrire_candidat from '../Components/Inscrire_Candidat'
+
 
 function Inscription_Candidat() {
   return (
     <div>
-
       <Navbar />
-      
-      <Formulaire_Inscription_Candidat />
-        
+      <Inscrire_candidat />
       <Footer />
     </div>
   )
