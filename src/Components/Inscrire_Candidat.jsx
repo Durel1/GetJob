@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar';
-import Footer from './Footer';
 
 function Inscrire_candidat() {
   const [form, setForm] = useState({
@@ -23,8 +21,6 @@ function Inscrire_candidat() {
 
   return (
     <div>
-      <Navbar />
-
       <div style={styles.container}>
         <div style={styles.card}>
           <h2 style={styles.title}>Inscription Candidat</h2>
@@ -68,8 +64,6 @@ function Inscrire_candidat() {
           </form>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }

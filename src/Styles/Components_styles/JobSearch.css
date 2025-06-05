@@ -6,7 +6,7 @@
   position: relative;
   font-family: sans-serif;
   box-sizing: border-box;
-  background: url(../../../public/wallpaper.jpg) center/cover;
+  background: url(../../../public/background-img.jpg) center/cover;
 }
 .NavLink {
   text-decoration: none;
@@ -75,12 +75,18 @@
 }
 
 .search-inputs {
+  /* display: flex;
+  flex-direction: column; */
+  
+
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
   align-items: center;
 }
+
+
 
 .input {
   padding: 15px 20px;
@@ -117,6 +123,15 @@
 
 /* Responsive text and layout adjustments */
 @media (max-width: 768px) {
+  .search-inputs {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .search-box {
+    padding: 0;
+    
+  }
   .search-title {
     font-size: 1.5rem;
   }

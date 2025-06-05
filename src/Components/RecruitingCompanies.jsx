@@ -6,18 +6,18 @@ function RecruitingCompanies() {
     <div className="recruiting-container">
       <h2 className="recruiting-title">Les entreprises qui recrutent</h2>
       <div className="recruiting-companies">
-        <div className="featured-company">
-                <div className="featured-header">L‘entreprise à la une</div>
-            <div className="featured-logo">Logo</div>
+        <div className="featured-card">
+          <div className="featured-header">L´entreprise à la une</div>
+          <div className="featured-body" />
         </div>
         <div className="company-slider">
-            <button className="nav-button">&#10094;</button>
-            <div className="company-card" />
-            <div className="company-card" />
-            <div className="company-card" />
-            <div className="company-card" />
-            <div className="company-card" />
-            <button className="nav-button">&#10095;</button>
+          <button className="nav-button">&#10094;</button>
+          <div className="company-card comp1"></div>
+          <div className="company-card comp2"></div>
+          <div className="company-card comp3"></div>
+          <div className="company-card comp4"></div>
+          <div className="company-card comp5"></div> 
+          <button className="nav-button">&#10095;</button>
         </div>
       </div>
     </div>

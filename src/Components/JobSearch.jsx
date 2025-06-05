@@ -20,11 +20,7 @@ const JobSearch = () => {
           Trouvez votre futur job parmi <span className="highlight">2060</span> postes ouverts
         </h2>
         <div className="search-inputs">
-          <input
-            type="text"
-            placeholder="Mots-clés"
-            className="input"
-          />
+          <input type="text" placeholder="Mots-clés" className="input"/>
           <select className="input">
             <option>region(s)</option>
             <option>Ngaoundéré</option>
