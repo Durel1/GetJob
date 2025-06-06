@@ -27,7 +27,7 @@ function Inscrire_recruteur() {
           <h2 style={styles.title}>Inscription Recruteur</h2>
           <form onSubmit={handleSubmit}>
             <div style={styles.formGroup}>
-              <label>Nom de l'entreprise :</label>
+              <label style={{color: '#333'}}>Nom de l'entreprise :</label>
               <input
                 type="text"
                 name="entreprise"
@@ -38,7 +38,7 @@ function Inscrire_recruteur() {
               />
             </div>
             <div style={styles.formGroup}>
-              <label>Nom du recruteur :</label>
+              <label style={{color: '#333'}}>Nom du recruteur :</label>
               <input
                 type="text"
                 name="nom"
@@ -49,7 +49,7 @@ function Inscrire_recruteur() {
               />
             </div>
             <div style={styles.formGroup}>
-              <label>Email :</label>
+              <label style={{color: '#333'}}>Email :</label>
               <input
                 type="email"
                 name="email"
@@ -60,7 +60,7 @@ function Inscrire_recruteur() {
               />
             </div>
             <div style={styles.formGroup}>
-              <label>Mot de passe :</label>
+              <label style={{color: '#333'}} >Mot de passe :</label>
               <input
                 type="password"
                 name="password"
