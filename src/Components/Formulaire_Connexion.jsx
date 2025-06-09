@@ -11,7 +11,7 @@ const Formulaire_Connexion = () => {
 
   return (
     <div style={styles.container}>
-      <h2 style={{color :'#333',fontSize: '24px'}}>Formulaire de connexion</h2>
+      <h2 style={{color :'#333',fontSize: '24px'}}>Se Connecter</h2>
       <form onSubmit={handleSubmit} style={styles.form}>
         <input
           type="email"

@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import InputMask from "react-input-mask";
 
 function Inscrire_candidat() {
   const [form, setForm] = useState({
     nom: '',
+    telephone: '',
     email: '',
     password: ''
   });
@@ -30,34 +32,56 @@ function Inscrire_candidat() {
               <input
                 type="text"
                 name="nom"
+                placeholder='Entrez votre nom complet'
                 value={form.nom}
                 onChange={handleChange}
                 required
                 style={styles.input}
               />
+
+              <label style={{color: '#333', marginTop:'8px'}}>Numero de telphone :</label>
+               <input
+                type="text"
+                name="telephone"
+                mask="(+237) 999 99 99 99"
+                placeholder='(+237) 6 00 00 00 00'
+                maskPlaceholder=" "
+                inputMode="numeric"
+                maskChar=" "
+                value={form.telephone}
+                onChange={handleChange}
+                required
+                style={styles.input}
+              />
+
             </div>
             <div style={styles.formGroup}>
               <label style={{color: '#333'}}>Email :</label>
               <input
                 type="email"
                 name="email"
+                placeholder='Entrez votre email'
                 value={form.email}
                 onChange={handleChange}
                 required
                 style={styles.input}
               />
             </div>
+
             <div style={styles.formGroup}>
               <label style={{color: '#333'}}>Mot de passe :</label>
               <input
                 type="password"
                 name="password"
+                placeholder='Entrez votre mot de passe'
+                autoComplete="new-password"
                 value={form.password}
                 onChange={handleChange}
                 required
                 style={styles.input}
               />
             </div>
+
             <button type="submit" style={styles.button}>
               S'inscrire
             </button>
@@ -70,7 +94,7 @@ function Inscrire_candidat() {
 
 const styles = {
   container: {
-    minHeight: '80vh',
+    minHeight: '90vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -102,7 +126,10 @@ const styles = {
     fontSize: '16px',
     borderRadius: '5px',
     border: '1px solid #ccc',
+    color: '#333',
+    
   },
+
   button: {
     width: '100%',
     padding: '10px',
