@@ -70,7 +70,7 @@ function Inscrire_recruteur() {
                 style={styles.input}
               />
             </div>
-            <button type="submit" style={styles.button}>
+            <button  type="submit" style={styles.button}>
               S'inscrire
             </button>
           </form>
