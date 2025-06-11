@@ -17,26 +17,26 @@ const JobSearch = () => {
 
       <div className="search-box">
         <h2 className="search-title">
-          Trouvez votre futur job parmi <span className="highlight">2060</span> postes ouverts
+          Trouvez votre futur job ou stage parmi <span className="highlight">plusieurs</span> offres disponibles
         </h2>
         <div className="search-inputs">
           <input type="text" placeholder="Mots-clés" className="input"/>
           <select className="input">
             <option>region(s)</option>
-            <option>Ngaoundéré</option>
-            <option>Bertoua</option>
-            <option>Yaoundé</option>
-            <option>Bertoua</option>
-            <option>Douala</option>
-            <option>Garoua</option>
-            <option>Bamenda</option>
-            <option>Bafoussam</option>
-            <option>Ebolowa</option>
-            <option>Buéa</option>
+            <option>Extreme-nord</option>
+            <option>Nord</option>
+            <option>Adamaoua</option>
+            <option>Ouest</option>
+            <option>Est</option>
+            <option>Nord-Ouest</option>
+            <option>Sud-Ouest</option>
+            <option>Centre</option>
+            <option>Littoral</option>
+            <option>Sud</option>
           </select>
           <select className="input">
             <option>Métier</option>
-            <option>Informatique, nouvelles technologies</option>
+            <option>Informmatique, nouvelles technologies</option>
             <option>Management</option>
             <option>Marketing</option>
             <option>Comptabilité, finance</option>
