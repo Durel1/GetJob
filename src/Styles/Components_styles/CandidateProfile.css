@@ -1,0 +1,78 @@
+.profile-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fdfdfd;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+strong{
+    color: #333;
+}
+
+p{
+    color: #333;
+    font-size: 1rem;
+}
+
+input{
+    color: #333;
+}
+
+.profile-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.step {
+    color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #003c5f;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #002a46;
+}
+
+@media (max-width: 600px) {
+  .buttons {
+    flex-direction: row;
+    gap: 0.8rem;
+  }
+}
