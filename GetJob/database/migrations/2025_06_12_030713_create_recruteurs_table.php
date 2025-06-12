@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('recruteurs', function (Blueprint $table) {
             $table->id();
+            $table->string('nom_entreprise');
+            $table->string('nom_recruteur');
+            $table->string('email')->unique();
+            $table->string('password');
+            $table->string('logo')->nullable(); 
             $table->timestamps();
         });
     }

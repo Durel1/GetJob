@@ -14,9 +14,11 @@ return new class extends Migration
         Schema::create('candidats', function (Blueprint $table) {
             $table->id();
             $table->string('nom');
-            $table->integer('numero_telephone');
             $table->string('email')->unique();
-            $table->string('mot_de_passe');
+            $table->string('password');
+            $table->string('telephone')->nullable();
+            $table->string('cv')->nullable();        // stocke le chemin du CV
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
