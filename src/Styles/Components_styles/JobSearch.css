@@ -43,6 +43,7 @@
   border: none;
   cursor: pointer;
   white-space: nowrap;
+  width: 30%;
 
 }
 
@@ -70,9 +71,7 @@
   margin-bottom: 30px;
 }
 
-.highlight {
-  font-weight: bold;
-}
+
 
 .search-inputs {
   /* display: flex;

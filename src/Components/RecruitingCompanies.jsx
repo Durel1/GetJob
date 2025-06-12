@@ -11,13 +11,13 @@ function RecruitingCompanies() {
           <div className="featured-body" />
         </div>
         <div className="company-slider">
-          <button className="nav-button">&#10094;</button>
+          <button className="nav-button" style={{width:'0%'}}>&#10094;</button>
           <div className="company-card comp1"></div>
           <div className="company-card comp2"></div>
           <div className="company-card comp3"></div>
           <div className="company-card comp4"></div>
           <div className="company-card comp5"></div> 
-          <button className="nav-button">&#10095;</button>
+          <button className="nav-button" style={{width:'0%'}}>&#10095;</button>
         </div>
       </div>
     </div>

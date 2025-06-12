@@ -6,7 +6,7 @@ const JobSearch = () => {
     <div className="job-search-container">
       
       <div className="top-buttons">
-        <button className="candidate-button">
+        <button className="candidate-button" >
           <NavLink to="/Inscription_Candidat" className="NavLink">Candidat : Déposez votre CV </NavLink>
         </button>
 
@@ -16,11 +16,11 @@ const JobSearch = () => {
       </div>
 
       <div className="search-box">
-        <h2 className="search-title">
-          Trouvez votre futur job ou stage parmi <span className="highlight">plusieurs</span> offres disponibles
+        <h2 className="search-title" style={{color:'white'}}>
+          Trouvez votre futur job ou stage parmi plusieurs offres disponibles
         </h2>
         <div className="search-inputs">
-          <input type="text" placeholder="Mots-clés" className="input"/>
+          <input type="text" placeholder="Mots-clés" className="input" style={{marginBottom:'0px'}}/>
           <select className="input">
             <option>region(s)</option>
             <option>Extreme-nord</option>
