@@ -620,7 +620,6 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 - [Supabase](https://supabase.com/) - Backend as a Service
 - [shadcn/ui](https://ui.shadcn.com/) - Composants UI
 - [Tailwind CSS](https://tailwindcss.com/) - Framework CSS
-- [Lovable](https://lovable.dev/) - Plateforme de développement
 
 ---
 
