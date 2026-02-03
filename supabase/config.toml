@@ -1,0 +1,14 @@
+
+project_id = "ilbhewyiqqgliivqyvjp"
+
+[functions.send-application-notification]
+verify_jwt = false
+
+[functions.send-status-update]
+verify_jwt = false
+
+[functions.send-password-reset]
+verify_jwt = false
+
+[functions.send-password-confirmation]
+verify_jwt = false
