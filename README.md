@@ -1,4 +1,4 @@
-# 🎓 StageConnect - Plateforme de Mise en Relation Étudiants-Recruteurs
+# 🎓 Getjob - Plateforme de Mise en Relation Étudiants-Recruteurs
 
 <div align="center">
 
