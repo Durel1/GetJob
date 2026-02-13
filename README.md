@@ -10,7 +10,7 @@
 
 **Une plateforme moderne pour connecter les talents étudiants aux opportunités professionnelles**
 
-[🚀 Démo Live](https://lovable.dev/projects/8c952056-fdc7-434c-bd9c-8814bd9ece28) • [📖 Documentation](#-documentation) • [🛠️ Installation](#️-installation)
+[🚀 Tester l'appli](https://my-getjob-app.vercel.app/) • [📖 Documentation](#-documentation) • [🛠️ Installation](#️-installation)
 
 </div>
 
