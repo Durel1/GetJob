@@ -627,6 +627,6 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 **Développé avec ❤️ pour connecter les talents de demain**
 
-[⬆ Retour en haut](#-stageconnect---plateforme-de-mise-en-relation-étudiants-recruteurs)
+[By KENFACK Durel](#-stageconnect---plateforme-de-mise-en-relation-étudiants-recruteurs)
 
 </div>
